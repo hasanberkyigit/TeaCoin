@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+public final class TeaCoinAPIClient {
+    
+    public static func testRun1(){
+        print("Run Test run")
+    }
+}
