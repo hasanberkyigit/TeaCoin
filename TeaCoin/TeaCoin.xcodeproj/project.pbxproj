@@ -13,7 +13,23 @@
 		981C5E44279B70FF00FAF570 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 981C5E42279B70FF00FAF570 /* Main.storyboard */; };
 		981C5E46279B710100FAF570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 981C5E45279B710100FAF570 /* Assets.xcassets */; };
 		981C5E49279B710100FAF570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 981C5E47279B710100FAF570 /* LaunchScreen.storyboard */; };
+		981C5E76279B750800FAF570 /* TeaCoinAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981C5E75279B750800FAF570 /* TeaCoinAPI.framework */; };
+		981C5E77279B750800FAF570 /* TeaCoinAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 981C5E75279B750800FAF570 /* TeaCoinAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		981C5E78279B750800FAF570 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				981C5E77279B750800FAF570 /* TeaCoinAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		981C5E39279B70FF00FAF570 /* TeaCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeaCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,7 @@
 		981C5E45279B710100FAF570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		981C5E48279B710100FAF570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		981C5E4A279B710100FAF570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		981C5E75279B750800FAF570 /* TeaCoinAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TeaCoinAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				981C5E76279B750800FAF570 /* TeaCoinAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 			children = (
 				981C5E3B279B70FF00FAF570 /* TeaCoin */,
 				981C5E3A279B70FF00FAF570 /* Products */,
+				981C5E74279B750800FAF570 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,14 @@
 			path = TeaCoin;
 			sourceTree = "<group>";
 		};
+		981C5E74279B750800FAF570 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				981C5E75279B750800FAF570 /* TeaCoinAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +104,7 @@
 				981C5E35279B70FF00FAF570 /* Sources */,
 				981C5E36279B70FF00FAF570 /* Frameworks */,
 				981C5E37279B70FF00FAF570 /* Resources */,
+				981C5E78279B750800FAF570 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

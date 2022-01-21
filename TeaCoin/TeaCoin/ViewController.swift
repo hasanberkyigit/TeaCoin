@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import TeaCoinAPI
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        TeaCoinAPIClient.testRun1()
     }
 
 
