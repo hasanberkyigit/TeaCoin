@@ -16,7 +16,7 @@ class CoinTests: XCTestCase {
         guard let url = url else { return }
         let data = try Data(contentsOf: url)
         let decoder = JSONDecoder()
-        let coin = try decoder.decode(CoinsResponse.self, from: data)
+        let coin = try decoder.decode(Coins.self, from: data)
         
         XCTAssertEqual(coin.data.coins.first?.uuid, "Qwsogvtv82FCd")
         XCTAssertEqual(coin.data.coins.first?.symbol, "BTC")
@@ -27,7 +27,8 @@ class CoinTests: XCTestCase {
         XCTAssertEqual(coin.data.coins.first?.price, "56373.67522635439")
         XCTAssertEqual(coin.data.coins.first?.listedAt, 1330214400)
         XCTAssertEqual(coin.data.coins.first?.change, "-3.61")
-        XCTAssertEqual(coin.data.coins.first?.sparkline[0], "58484.1797527997004874770000")
+        XCTAssertEqual(coin.data.coins.first?.sparkLine[0], "58484.1797527997004874770000")
+        XCTAssertEqual(coin.data.coins.first?.twentyFourHourVolume, "39591261551")
     }
     
 }

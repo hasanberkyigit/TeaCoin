@@ -7,14 +7,14 @@
 
 import Foundation
 
-public struct CoinsResponse: Decodable{
-    let data: Coin
+public struct Coins: Decodable{
+    let data: CoinList
 }
-public struct Coin: Decodable {
-    public let coins: [List]
+public struct CoinList: Decodable {
+    public let coins: [CoinProperties]
     
 }
-public struct List: Decodable {
+public struct CoinProperties: Decodable {
     
     public enum CodingKeys: String, CodingKey {
         case uuid
