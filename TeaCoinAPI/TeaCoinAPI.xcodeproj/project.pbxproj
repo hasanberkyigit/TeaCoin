@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		981C5E5E279B723F00FAF570 /* TeaCoinAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 981C5E5D279B723F00FAF570 /* TeaCoinAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		981C5E65279B728B00FAF570 /* TeaCoinAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E64279B728B00FAF570 /* TeaCoinAPIClient.swift */; };
 		981C5E6E279B72A300FAF570 /* TeaCoinAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981C5E5A279B723F00FAF570 /* TeaCoinAPI.framework */; };
 		981C5E7B279B7EAE00FAF570 /* CoinList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E7A279B7EAD00FAF570 /* CoinList.swift */; };
 		981C5E7D279B830300FAF570 /* CoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E7C279B830300FAF570 /* CoinTests.swift */; };
 		981C5E80279B837300FAF570 /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E7F279B837300FAF570 /* Decoders.swift */; };
 		981C5E82279B8A1100FAF570 /* coin.json in Resources */ = {isa = PBXBuildFile; fileRef = 981C5E81279B8A1100FAF570 /* coin.json */; };
 		981C5E85279C9CF200FAF570 /* CoinsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E84279C9CF200FAF570 /* CoinsResponse.swift */; };
+		981C5E89279CA5FD00FAF570 /* CoinsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E88279CA5FD00FAF570 /* CoinsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,13 +30,13 @@
 /* Begin PBXFileReference section */
 		981C5E5A279B723F00FAF570 /* TeaCoinAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TeaCoinAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		981C5E5D279B723F00FAF570 /* TeaCoinAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeaCoinAPI.h; sourceTree = "<group>"; };
-		981C5E64279B728B00FAF570 /* TeaCoinAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaCoinAPIClient.swift; sourceTree = "<group>"; };
 		981C5E6A279B72A300FAF570 /* TeaCoinAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeaCoinAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		981C5E7A279B7EAD00FAF570 /* CoinList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinList.swift; sourceTree = "<group>"; };
 		981C5E7C279B830300FAF570 /* CoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTests.swift; sourceTree = "<group>"; };
 		981C5E7F279B837300FAF570 /* Decoders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoders.swift; sourceTree = "<group>"; };
 		981C5E81279B8A1100FAF570 /* coin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = coin.json; sourceTree = "<group>"; };
 		981C5E84279C9CF200FAF570 /* CoinsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsResponse.swift; sourceTree = "<group>"; };
+		981C5E88279CA5FD00FAF570 /* CoinsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 				981C5E7E279B836000FAF570 /* Helpers */,
 				981C5E79279B7E7800FAF570 /* DTOs */,
 				981C5E5D279B723F00FAF570 /* TeaCoinAPI.h */,
-				981C5E64279B728B00FAF570 /* TeaCoinAPIClient.swift */,
+				981C5E88279CA5FD00FAF570 /* CoinsService.swift */,
 			);
 			path = TeaCoinAPI;
 			sourceTree = "<group>";
@@ -235,8 +235,8 @@
 			files = (
 				981C5E80279B837300FAF570 /* Decoders.swift in Sources */,
 				981C5E85279C9CF200FAF570 /* CoinsResponse.swift in Sources */,
+				981C5E89279CA5FD00FAF570 /* CoinsService.swift in Sources */,
 				981C5E7B279B7EAE00FAF570 /* CoinList.swift in Sources */,
-				981C5E65279B728B00FAF570 /* TeaCoinAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
