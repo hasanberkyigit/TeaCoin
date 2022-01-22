@@ -7,14 +7,21 @@
 
 import Foundation
 
-protocol CoinsServiceProtocol {
-    func fetchCoins(completion: ([Coins]) -> Void)
+public protocol CoinsServiceProtocol {
+    func fetchCoins(completion: @escaping (Result<CoinResponse>) -> Void)
 }
 
-class CoinsService: CoinsServiceProtocol{
+public class CoinsService: CoinsServiceProtocol{
     
-    func fetchCoins(completion: ([Coins]) -> Void) {
-        <#code#>
+    public enum Error: Swift.Error {
+        case serializationError(internal: Swift.Error)
+        case networkError(internal: Swift.Error)
+    }
+
+    public func fetchCoins(completion: @escaping (Result<CoinResponse>) -> Void) {
+       
+        
+        
     }
     
     
