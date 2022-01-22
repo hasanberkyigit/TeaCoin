@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		981C5E5E279B723F00FAF570 /* TeaCoinAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 981C5E5D279B723F00FAF570 /* TeaCoinAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		981C5E65279B728B00FAF570 /* TeaCoinAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E64279B728B00FAF570 /* TeaCoinAPIClient.swift */; };
-		981C5E6D279B72A300FAF570 /* TeaCoinAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E6C279B72A300FAF570 /* TeaCoinAPITests.swift */; };
 		981C5E6E279B72A300FAF570 /* TeaCoinAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981C5E5A279B723F00FAF570 /* TeaCoinAPI.framework */; };
+		981C5E7B279B7EAE00FAF570 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E7A279B7EAD00FAF570 /* Coin.swift */; };
+		981C5E7D279B830300FAF570 /* CoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E7C279B830300FAF570 /* CoinTests.swift */; };
+		981C5E80279B837300FAF570 /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E7F279B837300FAF570 /* Decoders.swift */; };
+		981C5E82279B8A1100FAF570 /* coin.json in Resources */ = {isa = PBXBuildFile; fileRef = 981C5E81279B8A1100FAF570 /* coin.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,10 @@
 		981C5E5D279B723F00FAF570 /* TeaCoinAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeaCoinAPI.h; sourceTree = "<group>"; };
 		981C5E64279B728B00FAF570 /* TeaCoinAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaCoinAPIClient.swift; sourceTree = "<group>"; };
 		981C5E6A279B72A300FAF570 /* TeaCoinAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeaCoinAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		981C5E6C279B72A300FAF570 /* TeaCoinAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaCoinAPITests.swift; sourceTree = "<group>"; };
+		981C5E7A279B7EAD00FAF570 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		981C5E7C279B830300FAF570 /* CoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTests.swift; sourceTree = "<group>"; };
+		981C5E7F279B837300FAF570 /* Decoders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoders.swift; sourceTree = "<group>"; };
+		981C5E81279B8A1100FAF570 /* coin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = coin.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,8 @@
 		981C5E5C279B723F00FAF570 /* TeaCoinAPI */ = {
 			isa = PBXGroup;
 			children = (
+				981C5E7E279B836000FAF570 /* Helpers */,
+				981C5E79279B7E7800FAF570 /* DTOs */,
 				981C5E5D279B723F00FAF570 /* TeaCoinAPI.h */,
 				981C5E64279B728B00FAF570 /* TeaCoinAPIClient.swift */,
 			);
@@ -80,9 +88,26 @@
 		981C5E6B279B72A300FAF570 /* TeaCoinAPITests */ = {
 			isa = PBXGroup;
 			children = (
-				981C5E6C279B72A300FAF570 /* TeaCoinAPITests.swift */,
+				981C5E7C279B830300FAF570 /* CoinTests.swift */,
+				981C5E81279B8A1100FAF570 /* coin.json */,
 			);
 			path = TeaCoinAPITests;
+			sourceTree = "<group>";
+		};
+		981C5E79279B7E7800FAF570 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				981C5E7A279B7EAD00FAF570 /* Coin.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		981C5E7E279B836000FAF570 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				981C5E7F279B837300FAF570 /* Decoders.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +176,7 @@
 					};
 					981C5E69279B72A300FAF570 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -185,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				981C5E82279B8A1100FAF570 /* coin.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				981C5E80279B837300FAF570 /* Decoders.swift in Sources */,
+				981C5E7B279B7EAE00FAF570 /* Coin.swift in Sources */,
 				981C5E65279B728B00FAF570 /* TeaCoinAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,7 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				981C5E6D279B72A300FAF570 /* TeaCoinAPITests.swift in Sources */,
+				981C5E7D279B830300FAF570 /* CoinTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,14 +431,21 @@
 		981C5E72279B72A300FAF570 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8UJ92BTR5X;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hasanberkyigit.TeaCoinAPITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -418,10 +454,16 @@
 		981C5E73279B72A300FAF570 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8UJ92BTR5X;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hasanberkyigit.TeaCoinAPITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

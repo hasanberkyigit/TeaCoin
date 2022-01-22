@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:TeaCoinAPI/TeaCoinAPI.xcodeproj">
+      location = "group:TeaCoin/TeaCoin.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:TeaCoin/TeaCoin.xcodeproj">
+      location = "group:TeaCoinAPI/TeaCoinAPI.xcodeproj">
    </FileRef>
 </Workspace>
