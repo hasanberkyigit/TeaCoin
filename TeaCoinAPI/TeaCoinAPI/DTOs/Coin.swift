@@ -15,6 +15,21 @@ public struct Coin: Decodable {
     
 }
 public struct List: Decodable {
+    
+    public enum CodingKeys: String, CodingKey {
+        case uuid
+        case symbol
+        case name
+        case color
+        case iconUrl
+        case marketCap
+        case price
+        case listedAt
+        case change
+        case sparkLine = "sparkline"
+        case twentyFourHourVolume = "24hVolume"
+    }
+    
     public let uuid: String
     public let symbol: String
     public let name: String
@@ -24,5 +39,6 @@ public struct List: Decodable {
     public let price: String
     public let listedAt: Int
     public let change: String
-    public let sparkline: [String]
+    public let sparkLine: [String]
+    public let twentyFourHourVolume: String
 }
