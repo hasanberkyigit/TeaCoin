@@ -16,6 +16,7 @@
 		981C5E85279C9CF200FAF570 /* CoinsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E84279C9CF200FAF570 /* CoinsResponse.swift */; };
 		981C5E89279CA5FD00FAF570 /* CoinsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E88279CA5FD00FAF570 /* CoinsService.swift */; };
 		981C5E8B279CA7D300FAF570 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E8A279CA7D300FAF570 /* Result.swift */; };
+		98C443F7279CD79E0026B235 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 98C443F6279CD79E0026B235 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98C443F7279CD79E0026B235 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +154,9 @@
 			dependencies = (
 			);
 			name = TeaCoinAPI;
+			packageProductDependencies = (
+				98C443F6279CD79E0026B235 /* Alamofire */,
+			);
 			productName = TeaCoinAPI;
 			productReference = 981C5E5A279B723F00FAF570 /* TeaCoinAPI.framework */;
 			productType = "com.apple.product-type.framework";
@@ -203,6 +208,9 @@
 				Base,
 			);
 			mainGroup = 981C5E50279B723F00FAF570;
+			packageReferences = (
+				98C443F5279CD79E0026B235 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 981C5E5B279B723F00FAF570 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -528,6 +536,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		98C443F5279CD79E0026B235 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		98C443F6279CD79E0026B235 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98C443F5279CD79E0026B235 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 981C5E51279B723F00FAF570 /* Project object */;
 }
