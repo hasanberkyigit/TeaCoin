@@ -17,12 +17,11 @@ public class CoinsService: CoinsServiceProtocol{
         case serializationError(internal: Swift.Error)
         case networkError(internal: Swift.Error)
     }
-
+    public init() {}
     public func fetchCoins(completion: @escaping (Result<CoinResponse>) -> Void) {
        
+        let urlString = "https://psp-merchantpanel-service-sandbox.ozanodeme.com.tr/api/v1/dummy/coins"
         
         
-    }
-    
-    
+            }
 }

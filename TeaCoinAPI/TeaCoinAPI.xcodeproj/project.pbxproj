@@ -16,7 +16,6 @@
 		981C5E85279C9CF200FAF570 /* CoinsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E84279C9CF200FAF570 /* CoinsResponse.swift */; };
 		981C5E89279CA5FD00FAF570 /* CoinsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E88279CA5FD00FAF570 /* CoinsService.swift */; };
 		981C5E8B279CA7D300FAF570 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E8A279CA7D300FAF570 /* Result.swift */; };
-		981C5E8E279CC1B100FAF570 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981C5E8D279CC1B100FAF570 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +39,6 @@
 		981C5E84279C9CF200FAF570 /* CoinsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsResponse.swift; sourceTree = "<group>"; };
 		981C5E88279CA5FD00FAF570 /* CoinsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsService.swift; sourceTree = "<group>"; };
 		981C5E8A279CA7D300FAF570 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		981C5E8D279CC1B100FAF570 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Vendor/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +46,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				981C5E8E279CC1B100FAF570 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +65,6 @@
 			children = (
 				981C5E5C279B723F00FAF570 /* TeaCoinAPI */,
 				981C5E6B279B72A300FAF570 /* TeaCoinAPITests */,
-				981C5E8C279CC15400FAF570 /* Frameworks */,
 				981C5E5B279B723F00FAF570 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,14 +122,6 @@
 				981C5E84279C9CF200FAF570 /* CoinsResponse.swift */,
 			);
 			path = Responses;
-			sourceTree = "<group>";
-		};
-		981C5E8C279CC15400FAF570 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				981C5E8D279CC1B100FAF570 /* Alamofire.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -343,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -400,6 +390,7 @@
 		981C5E62279B723F00FAF570 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -432,6 +423,7 @@
 		981C5E63279B723F00FAF570 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

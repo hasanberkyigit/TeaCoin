@@ -9,11 +9,15 @@ import UIKit
 import TeaCoinAPI
 
 class ViewController: UIViewController {
+    
+    let service: CoinsServiceProtocol = CoinsService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        TeaCoinAPIClient.testRun1()
+       
+        
+    
     }
 
 

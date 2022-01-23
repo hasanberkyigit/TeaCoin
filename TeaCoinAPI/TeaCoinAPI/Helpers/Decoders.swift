@@ -9,11 +9,11 @@ import Foundation
 
 public enum Decoders {
     //TODO: - Decoder for timestamps.
-//    static let plainDateDecoder: JSONDecoder = {
-//         //1330214400
-//        let decoder = JSONDecoder()
-//        let dateFormatter = DateFormatter()
-//        decoder.dateDecodingStrategy = .secondsSince1970
-//        return decoder
-//    }()
+    static let plainDateDecoder: JSONDecoder = {
+         //1330214400
+        let decoder = JSONDecoder()
+        let dateFormatter = DateFormatter()
+        decoder.dateDecodingStrategy = .secondsSince1970
+        return decoder
+    }()
 }
