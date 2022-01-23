@@ -12,8 +12,8 @@ public enum Decoders {
     static let plainDateDecoder: JSONDecoder = {
          //1330214400
         let decoder = JSONDecoder()
-        let dateFormatter = DateFormatter()
-        decoder.dateDecodingStrategy = .secondsSince1970
+//        let dateFormatter = DateFormatter()
+//        decoder.dateDecodingStrategy = .secondsSince1970
         return decoder
     }()
 }
