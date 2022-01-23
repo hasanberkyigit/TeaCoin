@@ -28,6 +28,7 @@ class CoinTests: XCTestCase {
         XCTAssertEqual(coin.data.coins.first?.listedAt, 1330214400)
         XCTAssertEqual(coin.data.coins.first?.change, "-3.61")
         XCTAssertEqual(coin.data.coins.first?.sparkLine[0], "58484.1797527997004874770000")
+        XCTAssertEqual(coin.data.coins.count, 1)
         XCTAssertEqual(coin.data.coins.first?.twentyFourHourVolume, "39591261551")
     }
     
