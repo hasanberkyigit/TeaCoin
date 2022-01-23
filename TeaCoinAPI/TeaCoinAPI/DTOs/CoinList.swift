@@ -11,6 +11,7 @@ public struct Coins: Decodable{
     let data: CoinList
 }
 public struct CoinList: Decodable {
+    public let stats: Stats
     public let coins: [CoinProperties]
     
 }
@@ -33,7 +34,7 @@ public struct CoinProperties: Decodable {
     public let uuid: String
     public let symbol: String
     public let name: String
-    public let color:  String
+    public let color:  String?
     public let iconUrl: URL
     public let marketCap: String
     public let price: String
@@ -41,4 +42,14 @@ public struct CoinProperties: Decodable {
     public let change: String
     public let sparkLine: [String]
     public let twentyFourHourVolume: String
+}
+// MARK: - Stats
+ public struct Stats: Codable {
+    public let total, totalCoins, totalMarkets, totalExchanges: Int
+    public let totalMarketCap, total24HVolume: String
+
+    public enum CodingKeys: String, CodingKey {
+        case total, totalCoins, totalMarkets, totalExchanges, totalMarketCap
+        case total24HVolume = "total24hVolume"
+    }
 }
