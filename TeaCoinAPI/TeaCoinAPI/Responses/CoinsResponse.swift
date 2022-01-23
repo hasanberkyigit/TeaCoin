@@ -18,16 +18,16 @@ public struct CoinResponse: Decodable {
         case coins
     }
     
-    public let coins: [Coins]
+    public let coins: [CoinProperties]
     
-    init(coins: [Coins]) {
+    init(coins: [CoinProperties]) {
         self.coins = coins
     }
     
-    init(with decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let rootContainer = try decoder.container(keyedBy: RootCodingKeys.self)
         let coinsContainer = try rootContainer.nestedContainer(keyedBy: CoinsCodingKeys.self, forKey: .data)
-        self.coins = try coinsContainer.decode([Coins].self, forKey: .coins)
+        self.coins = try coinsContainer.decode([CoinProperties].self, forKey: .coins)
         
     }
     
