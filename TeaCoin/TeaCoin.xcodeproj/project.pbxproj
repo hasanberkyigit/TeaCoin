@@ -22,6 +22,7 @@
 		98FF1841279E8D01002C4EAB /* CoinPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF1840279E8D01002C4EAB /* CoinPresentation.swift */; };
 		98FF1844279E8F39002C4EAB /* CoinPresentation+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF1843279E8F39002C4EAB /* CoinPresentation+API.swift */; };
 		98FF1846279E911A002C4EAB /* CoinListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF1845279E911A002C4EAB /* CoinListViewModel.swift */; };
+		98FF184A279EE373002C4EAB /* CoinListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98FF1849279EE373002C4EAB /* CoinListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,7 @@
 		98FF1840279E8D01002C4EAB /* CoinPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinPresentation.swift; sourceTree = "<group>"; };
 		98FF1843279E8F39002C4EAB /* CoinPresentation+API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoinPresentation+API.swift"; sourceTree = "<group>"; };
 		98FF1845279E911A002C4EAB /* CoinListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewModel.swift; sourceTree = "<group>"; };
+		98FF1849279EE373002C4EAB /* CoinListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				98FF182B279E2516002C4EAB /* CoinListContracts.swift */,
 				98FF182F279E2871002C4EAB /* CoinListViewController.swift */,
 				98FF1831279E82AB002C4EAB /* CoinListCell.swift */,
+				98FF1849279EE373002C4EAB /* CoinListCell.xib */,
 				98FF1838279E8495002C4EAB /* CoinListBuilder.swift */,
 				98FF1845279E911A002C4EAB /* CoinListViewModel.swift */,
 			);
@@ -248,6 +251,7 @@
 			files = (
 				981C5E49279B710100FAF570 /* LaunchScreen.storyboard in Resources */,
 				981C5E46279B710100FAF570 /* Assets.xcassets in Resources */,
+				98FF184A279EE373002C4EAB /* CoinListCell.xib in Resources */,
 				98FF182E279E2779002C4EAB /* CoinList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
