@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		981C5E3D279B70FF00FAF570 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E3C279B70FF00FAF570 /* AppDelegate.swift */; };
-		981C5E3F279B70FF00FAF570 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E3E279B70FF00FAF570 /* SceneDelegate.swift */; };
-		981C5E41279B70FF00FAF570 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E40279B70FF00FAF570 /* ViewController.swift */; };
-		981C5E44279B70FF00FAF570 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 981C5E42279B70FF00FAF570 /* Main.storyboard */; };
 		981C5E46279B710100FAF570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 981C5E45279B710100FAF570 /* Assets.xcassets */; };
 		981C5E49279B710100FAF570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 981C5E47279B710100FAF570 /* LaunchScreen.storyboard */; };
 		981C5E76279B750800FAF570 /* TeaCoinAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981C5E75279B750800FAF570 /* TeaCoinAPI.framework */; };
 		981C5E77279B750800FAF570 /* TeaCoinAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 981C5E75279B750800FAF570 /* TeaCoinAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98FF182C279E2516002C4EAB /* CoinListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF182B279E2516002C4EAB /* CoinListContracts.swift */; };
+		98FF182E279E2779002C4EAB /* CoinList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FF182D279E2779002C4EAB /* CoinList.storyboard */; };
+		98FF1830279E2871002C4EAB /* CoinListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF182F279E2871002C4EAB /* CoinListViewController.swift */; };
+		98FF1832279E82AB002C4EAB /* CoinListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF1831279E82AB002C4EAB /* CoinListCell.swift */; };
+		98FF1834279E83B0002C4EAB /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF1833279E83B0002C4EAB /* AppContainer.swift */; };
+		98FF1837279E8400002C4EAB /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF1836279E8400002C4EAB /* AppRouter.swift */; };
+		98FF1839279E8495002C4EAB /* CoinListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF1838279E8495002C4EAB /* CoinListBuilder.swift */; };
+		98FF1841279E8D01002C4EAB /* CoinPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF1840279E8D01002C4EAB /* CoinPresentation.swift */; };
+		98FF1844279E8F39002C4EAB /* CoinPresentation+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF1843279E8F39002C4EAB /* CoinPresentation+API.swift */; };
+		98FF1846279E911A002C4EAB /* CoinListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF1845279E911A002C4EAB /* CoinListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,13 +41,20 @@
 /* Begin PBXFileReference section */
 		981C5E39279B70FF00FAF570 /* TeaCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeaCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		981C5E3C279B70FF00FAF570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		981C5E3E279B70FF00FAF570 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		981C5E40279B70FF00FAF570 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		981C5E43279B70FF00FAF570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		981C5E45279B710100FAF570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		981C5E48279B710100FAF570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		981C5E4A279B710100FAF570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		981C5E75279B750800FAF570 /* TeaCoinAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TeaCoinAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FF182B279E2516002C4EAB /* CoinListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListContracts.swift; sourceTree = "<group>"; };
+		98FF182D279E2779002C4EAB /* CoinList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoinList.storyboard; sourceTree = "<group>"; };
+		98FF182F279E2871002C4EAB /* CoinListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewController.swift; sourceTree = "<group>"; };
+		98FF1831279E82AB002C4EAB /* CoinListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCell.swift; sourceTree = "<group>"; };
+		98FF1833279E83B0002C4EAB /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		98FF1836279E8400002C4EAB /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		98FF1838279E8495002C4EAB /* CoinListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListBuilder.swift; sourceTree = "<group>"; };
+		98FF1840279E8D01002C4EAB /* CoinPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinPresentation.swift; sourceTree = "<group>"; };
+		98FF1843279E8F39002C4EAB /* CoinPresentation+API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoinPresentation+API.swift"; sourceTree = "<group>"; };
+		98FF1845279E911A002C4EAB /* CoinListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 		981C5E30279B70FF00FAF570 = {
 			isa = PBXGroup;
 			children = (
+				98FF183E279E8CE0002C4EAB /* Commons */,
 				981C5E3B279B70FF00FAF570 /* TeaCoin */,
 				981C5E3A279B70FF00FAF570 /* Products */,
 				981C5E74279B750800FAF570 /* Frameworks */,
@@ -75,13 +90,10 @@
 		981C5E3B279B70FF00FAF570 /* TeaCoin */ = {
 			isa = PBXGroup;
 			children = (
-				981C5E3C279B70FF00FAF570 /* AppDelegate.swift */,
-				981C5E3E279B70FF00FAF570 /* SceneDelegate.swift */,
-				981C5E40279B70FF00FAF570 /* ViewController.swift */,
-				981C5E42279B70FF00FAF570 /* Main.storyboard */,
-				981C5E45279B710100FAF570 /* Assets.xcassets */,
-				981C5E47279B710100FAF570 /* LaunchScreen.storyboard */,
-				981C5E4A279B710100FAF570 /* Info.plist */,
+				98FF1828279E206C002C4EAB /* App */,
+				98FF1829279E24C2002C4EAB /* Scenes */,
+				98FF183C279E8BA5002C4EAB /* Supporting Files */,
+				98FF183D279E8BBC002C4EAB /* Resources */,
 			);
 			path = TeaCoin;
 			sourceTree = "<group>";
@@ -92,6 +104,87 @@
 				981C5E75279B750800FAF570 /* TeaCoinAPI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98FF1828279E206C002C4EAB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				98FF1835279E83ED002C4EAB /* New Group */,
+				981C5E3C279B70FF00FAF570 /* AppDelegate.swift */,
+				98FF1833279E83B0002C4EAB /* AppContainer.swift */,
+				98FF1836279E8400002C4EAB /* AppRouter.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		98FF1829279E24C2002C4EAB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				98FF182A279E24E2002C4EAB /* CoinListPage */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		98FF182A279E24E2002C4EAB /* CoinListPage */ = {
+			isa = PBXGroup;
+			children = (
+				98FF182D279E2779002C4EAB /* CoinList.storyboard */,
+				98FF182B279E2516002C4EAB /* CoinListContracts.swift */,
+				98FF182F279E2871002C4EAB /* CoinListViewController.swift */,
+				98FF1831279E82AB002C4EAB /* CoinListCell.swift */,
+				98FF1838279E8495002C4EAB /* CoinListBuilder.swift */,
+				98FF1845279E911A002C4EAB /* CoinListViewModel.swift */,
+			);
+			path = CoinListPage;
+			sourceTree = "<group>";
+		};
+		98FF1835279E83ED002C4EAB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		98FF183C279E8BA5002C4EAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				981C5E47279B710100FAF570 /* LaunchScreen.storyboard */,
+				981C5E4A279B710100FAF570 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98FF183D279E8BBC002C4EAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				981C5E45279B710100FAF570 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		98FF183E279E8CE0002C4EAB /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				98FF183F279E8CEC002C4EAB /* Presentations */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		98FF183F279E8CEC002C4EAB /* Presentations */ = {
+			isa = PBXGroup;
+			children = (
+				98FF1842279E8F1E002C4EAB /* Extension */,
+				98FF1840279E8D01002C4EAB /* CoinPresentation.swift */,
+			);
+			path = Presentations;
+			sourceTree = "<group>";
+		};
+		98FF1842279E8F1E002C4EAB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				98FF1843279E8F39002C4EAB /* CoinPresentation+API.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +248,7 @@
 			files = (
 				981C5E49279B710100FAF570 /* LaunchScreen.storyboard in Resources */,
 				981C5E46279B710100FAF570 /* Assets.xcassets in Resources */,
-				981C5E44279B70FF00FAF570 /* Main.storyboard in Resources */,
+				98FF182E279E2779002C4EAB /* CoinList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,23 +259,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				981C5E41279B70FF00FAF570 /* ViewController.swift in Sources */,
+				98FF1830279E2871002C4EAB /* CoinListViewController.swift in Sources */,
+				98FF1839279E8495002C4EAB /* CoinListBuilder.swift in Sources */,
+				98FF182C279E2516002C4EAB /* CoinListContracts.swift in Sources */,
+				98FF1837279E8400002C4EAB /* AppRouter.swift in Sources */,
+				98FF1844279E8F39002C4EAB /* CoinPresentation+API.swift in Sources */,
+				98FF1834279E83B0002C4EAB /* AppContainer.swift in Sources */,
+				98FF1832279E82AB002C4EAB /* CoinListCell.swift in Sources */,
+				98FF1841279E8D01002C4EAB /* CoinPresentation.swift in Sources */,
 				981C5E3D279B70FF00FAF570 /* AppDelegate.swift in Sources */,
-				981C5E3F279B70FF00FAF570 /* SceneDelegate.swift in Sources */,
+				98FF1846279E911A002C4EAB /* CoinListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		981C5E42279B70FF00FAF570 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				981C5E43279B70FF00FAF570 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		981C5E47279B710100FAF570 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -319,10 +411,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8UJ92BTR5X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TeaCoin/Info.plist;
+				INFOPLIST_FILE = "TeaCoin/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -347,10 +438,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8UJ92BTR5X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TeaCoin/Info.plist;
+				INFOPLIST_FILE = "TeaCoin/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
