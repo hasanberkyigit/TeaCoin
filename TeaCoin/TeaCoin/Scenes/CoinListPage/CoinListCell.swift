@@ -16,33 +16,15 @@ final class CoinListCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var priceChangeLabel: UILabel!
     
-    private let pngString:String = ""
-    
-    private var coinList: [CoinPresentation] = []
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
-    
-    override class func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     func cellConfigure(data: CoinPresentation){
         
-        let str = pngString.svgToPng(data.icon)
-        coinImage.setImage(with: str )
+        let changeRate = (data.price*(data.change))/100
+        coinImage.setImage(with: data.icon.svgToPng())
         shortCodeLabel.text = data.symbol
         coinNameLabel.text = data.name
-        priceLabel.text = data.price
-        //TODO: Change me
-        if Double(data.change) ?? 0 < 0 {
-            priceChangeLabel.textColor = UIColor.red
-            shortCodeLabel?.text = data.symbol
-        }else {
-            priceChangeLabel.textColor = UIColor.green
-            shortCodeLabel?.text = data.symbol
-        }
+        priceLabel.text = "$\(data.price.percentageFormatter())"
+        priceChangeLabel.textColor = data.change < 0 ? .red : .green
+        priceChangeLabel?.text = "\(data.change)%(\(changeRate.percentageFormatter()))"
     }
 }
 

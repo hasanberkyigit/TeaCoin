@@ -14,8 +14,10 @@ class CoinDetailViewController: UIViewController {
     @IBOutlet weak var changeRateLabel: UILabel!
     @IBOutlet weak var highestPriceLabel: UILabel!
     @IBOutlet weak var lowestPriceLabel: UILabel!
+    @IBOutlet weak var coinNameLabel: UILabel!
     
     var viewModel: CoinDetailViewModelProtocol!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +30,15 @@ class CoinDetailViewController: UIViewController {
 extension CoinDetailViewController: CoinDetailViewModelDelegate {
     
     func showDetail(_ presentation: CoinDetailPresentation) {
-        currentPriceLabel.text = presentation.price
+       
+        let changeRate = (presentation.price*(presentation.change))/100
+        currentPriceLabel.text = "$\(presentation.price.percentageFormatter())"
         shortCodeLabel.text = presentation.symbol
-        changeRateLabel.text = presentation.change
-        highestPriceLabel.text = presentation.sparkLine.last
-        lowestPriceLabel.text = presentation.sparkLine.first
+        coinNameLabel.text = presentation.name
+        changeRateLabel.textColor = presentation.change < 0 ? .red : .green
+        changeRateLabel?.text = "\(presentation.change)%(\(changeRate.percentageFormatter()))"
+        lowestPriceLabel.text = "Low:\(presentation.minimumAmount)"
+        highestPriceLabel.text = "High:\(presentation.maximumAmount)"
     }
     
 }
