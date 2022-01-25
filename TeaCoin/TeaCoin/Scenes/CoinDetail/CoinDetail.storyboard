@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="6VQ-lW-pMx">
-                                <rect key="frame" x="0.0" y="76" width="414" height="143.5"/>
+                                <rect key="frame" x="0.0" y="76" width="414" height="136"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dau-pV-NOu">
                                         <rect key="frame" x="181" y="0.0" width="52.5" height="20.5"/>
@@ -25,37 +25,37 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="132" translatesAutoresizingMaskIntoConstraints="NO" id="i22-Wb-bYq">
-                                        <rect key="frame" x="0.5" y="41.5" width="413" height="102"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="i22-Wb-bYq">
+                                        <rect key="frame" x="36.5" y="41.5" width="341" height="94.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jn4-GI-c6z">
-                                                <rect key="frame" x="0.0" y="0.0" width="140.5" height="102"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="140.5" height="94.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CURRENT PRICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ek-fU-hQZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="128.5" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="115.5" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$62,809.80" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRD-tc-bnG">
-                                                        <rect key="frame" x="0.0" y="39" width="113.5" height="24"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <rect key="frame" x="0.0" y="36.5" width="103" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+5.15%(+3065.17)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9h-Wu-Swh">
-                                                        <rect key="frame" x="0.0" y="78" width="140.5" height="24"/>
+                                                        <rect key="frame" x="0.0" y="73" width="140.5" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" systemColor="systemGreenColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hIR-sQ-QCi">
-                                                <rect key="frame" x="272.5" y="0.0" width="140.5" height="91.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hIR-sQ-QCi">
+                                                <rect key="frame" x="220.5" y="0.0" width="120.5" height="91.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="btc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJx-Ws-sUM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="20.5"/>
+                                                        <rect key="frame" x="95.5" y="0.0" width="25" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -67,7 +67,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low: 59,213.19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deH-cN-db8">
-                                                        <rect key="frame" x="0.0" y="71" width="113" height="20.5"/>
+                                                        <rect key="frame" x="7.5" y="71" width="113" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -89,6 +89,7 @@
                     </view>
                     <connections>
                         <outlet property="changeRateLabel" destination="J9h-Wu-Swh" id="2F4-Ks-sie"/>
+                        <outlet property="coinNameLabel" destination="Dau-pV-NOu" id="S7H-wk-pdS"/>
                         <outlet property="currentPriceLabel" destination="XRD-tc-bnG" id="bx1-Es-udD"/>
                         <outlet property="highestPriceLabel" destination="ucb-FF-ne8" id="CKE-KR-EW3"/>
                         <outlet property="lowestPriceLabel" destination="deH-cN-db8" id="8oR-Ci-dOS"/>
