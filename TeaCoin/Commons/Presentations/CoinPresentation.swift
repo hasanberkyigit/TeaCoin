@@ -11,11 +11,11 @@ final class CoinPresentation: NSObject {
     
     let symbol: String
     let name: String
-    let price: String
-    let change: String
+    let price: Double
+    let change: Double
     let icon: String
     
-    init(symbol: String, name: String, price: String, change: String, icon: String) {
+    init(symbol: String, name: String, price: Double, change: Double, icon: String) {
         self.symbol = symbol
         self.name = name
         self.price = price
