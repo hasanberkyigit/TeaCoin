@@ -39,8 +39,9 @@ final class CoinListViewModel: CoinListViewModelProtocol {
     }
     
     func selectCoin(at index: Int) {
-        //TODO: Implement
-
+        let coin = coins[index]
+        let viewmodel = CoinDetailViewModel(coin: coin)
+        delegate?.navigate(to: .detail(viewmodel))
     }
     
     private func notify(_ output: CoinListViewModelOutput) {

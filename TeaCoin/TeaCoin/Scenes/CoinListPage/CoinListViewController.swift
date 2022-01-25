@@ -16,17 +16,13 @@ final class CoinListViewController: UIViewController {
             viewModel.delegate = self
         }
     }
-    
     private var coinList: [CoinPresentation] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.load()
         tableView.register(UINib(nibName: "CoinListCell", bundle: nil), forCellReuseIdentifier: "CoinListCell")
-        
-        
     }
-    
     
 }
 
@@ -45,7 +41,11 @@ extension CoinListViewController: CoinListViewModelDelegate {
     }
     
     func navigate(to route: CoinListViewRoute) {
-        //TODO: add to navigate func to delegate and change viewroute enum after created detail contracts.
+        switch route {
+        case .detail(let vm):
+            let viewController = CoinDetailBuilder.make(with: vm)
+            show(viewController, sender: nil)
+        }
     }
 }
 
@@ -66,5 +66,6 @@ extension CoinListViewController: UITableViewDataSource {
 extension CoinListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
+        viewModel.selectCoin(at: indexPath.row)
     }
 }
