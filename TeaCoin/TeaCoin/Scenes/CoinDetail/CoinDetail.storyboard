@@ -11,7 +11,7 @@
         <!--Coin Detail View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="CoinDetailViewController" customModule="TeaCoin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CoinDetailViewController" id="Y6W-OH-hqX" customClass="CoinDetailViewController" customModule="TeaCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,8 +54,8 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hIR-sQ-QCi">
                                                 <rect key="frame" x="272.5" y="0.0" width="140.5" height="91.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJx-Ws-sUM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="7.5" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="btc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJx-Ws-sUM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -87,6 +87,13 @@
                             <constraint firstAttribute="trailing" secondItem="6VQ-lW-pMx" secondAttribute="trailing" id="STB-rp-d5s"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="changeRateLabel" destination="J9h-Wu-Swh" id="2F4-Ks-sie"/>
+                        <outlet property="currentPriceLabel" destination="XRD-tc-bnG" id="bx1-Es-udD"/>
+                        <outlet property="highestPriceLabel" destination="ucb-FF-ne8" id="CKE-KR-EW3"/>
+                        <outlet property="lowestPriceLabel" destination="deH-cN-db8" id="8oR-Ci-dOS"/>
+                        <outlet property="shortCodeLabel" destination="NJx-Ws-sUM" id="T4U-Gl-PYx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
