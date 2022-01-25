@@ -11,8 +11,6 @@ import TeaCoinAPI
 
 final class CoinListViewModel: CoinListViewModelProtocol {
   
-    
-    
     weak var delegate: CoinListViewModelDelegate?
     private let service: CoinsServiceProtocol
     private var coins: [CoinProperties] = []
