@@ -12,7 +12,7 @@ final class CoinListBuilder {
     static func make() -> CoinListViewController {
         let storyboard = UIStoryboard(name: "CoinList", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "CoinListViewController") as! CoinListViewController
-        
+        viewController.viewModel = CoinListViewModel(service: app.service)
         return viewController
     }
 }
