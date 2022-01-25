@@ -35,7 +35,7 @@ public struct CoinProperties: Decodable {
     public let symbol: String
     public let name: String
     public let color:  String?
-    public let iconUrl: URL
+    public let iconUrl: String
     public let marketCap: String
     public let price: String
     public let listedAt: Int

@@ -13,9 +13,9 @@ final class CoinPresentation: NSObject {
     let name: String
     let price: String
     let change: String
-    let icon: URL
+    let icon: String
     
-    init(symbol: String, name: String, price: String, change: String, icon: URL) {
+    init(symbol: String, name: String, price: String, change: String, icon: String) {
         self.symbol = symbol
         self.name = name
         self.price = price
