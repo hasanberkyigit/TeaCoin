@@ -22,7 +22,7 @@ class CoinTests: XCTestCase {
         XCTAssertEqual(coin.data.coins.first?.symbol, "BTC")
         XCTAssertEqual(coin.data.coins.first?.name, "Bitcoin")
         XCTAssertEqual(coin.data.coins.first?.color, "#f7931A")
-        XCTAssertEqual(coin.data.coins.first?.iconUrl, URL(string: "https://cdn.coinranking.com/bOabBYkcX/bitcoin_btc.svg"))
+        XCTAssertEqual(coin.data.coins.first?.iconUrl,  "https://cdn.coinranking.com/bOabBYkcX/bitcoin_btc.svg")
         XCTAssertEqual(coin.data.coins.first?.marketCap, "1064845170034")
         XCTAssertEqual(coin.data.coins.first?.price, "56373.67522635439")
         XCTAssertEqual(coin.data.coins.first?.listedAt, 1330214400)
