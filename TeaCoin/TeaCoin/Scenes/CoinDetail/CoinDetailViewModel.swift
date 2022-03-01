@@ -10,7 +10,7 @@ import TeaCoinAPI
 
 final class CoinDetailViewModel: CoinDetailViewModelProtocol {
     
-    var delegate: CoinDetailViewModelDelegate?
+    weak var delegate: CoinDetailViewModelDelegate?
     private let presentation: CoinDetailPresentation
     
     init(coin: CoinProperties) {
